@@ -1,0 +1,67 @@
+<!--
+PLEASE READ THE INSTRUCTIONS
+**Using This website you can save Emergency Contacts, which will be stored in the local Storage. So that even if you close tab, the information will be saved.
+**You can also call and message the emergency contacts.
+**You can also delete the contacts.
+**You can contact the emergency contacts by clicking on the call or message button.
+**You can directly Contact any Indian Helpline numbers directly from this website.
+**This Website is responsive in all devices.
+
+SAVE WOMEN! SAVE WORLD!
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Emergency Contact Dialer</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <h1>Emergency Contact Dialer</h1>
+  </header>
+  <div id='main'>
+    <div class="section" id='input-form'>
+      <form>
+        <h1>Emergency Contacts</h1><br>
+        <label for="contact-name">Name:</label>
+        <input type="text" id="contact-name" name="contact-name"      placeholder="Enter contact name"><br>
+        <label for="contact-number">Number:</label>
+        <input type="text" id="contact-number" name="contact-number"      placeholder="Enter contact Number">
+        <button class="btn" id="save-btn">Save</button>
+      </form>
+    </div>
+    <div class="section" id='save-list-parent'>
+      <section id="for-delete">
+        <h1>No Contacts Saved</h1>
+        <h4>Save Contacts for Emergency Calls and Messages</h4>
+        </section>
+      <ul id='save-list'>
+        <!-- <li>
+          <h3>Name:</h3>
+          <h3>Number:</h3>
+          <button data-number='' class="btn">Call</button>
+          <button data-number='' class="btn">Message</button>
+          <button data-number='' id='delete'class="btn">Delete</button>
+           -->
+      </ul>
+    </div>
+    <div class="section" id="helpLine">
+      <h1>Indian Helpline Numbers</h1>
+      <ul>
+        <li data-number="100">Police(100)<button class="btn">Call</button></li>
+        <li data-number="1091">Women Help Line(1091)<button class="btn">Call</button></li>
+        <li data-number="181">Domestic Abuse(181)<button class="btn">Call</button></li>
+        <li data-number="102">Ambulance(102)<button class="btn">Call</button></li>
+        <li data-number="101">fire(101)<button class="btn">Call</button></li>
+      </ul>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>

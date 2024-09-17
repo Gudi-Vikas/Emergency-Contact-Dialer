@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+.btn{
+  background-color: green;
+  border: none;
+  border-radius:15px ;
+  padding: 5px;
+  color: white;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+.btn:hover{
+  background-color: #1cce1c;
+   box-shadow: 0px 5px 15px 3px #585555;
+}
+
+header h1{
+  background-color: #70001ce9;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+#main{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background:url(./images/bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.section{
+  height: 600px;
+  margin: 10% 10px;
+  border-radius: 30px;
+ 
+}
+/* section1 start */
+#input-form{
+  background: url(./images/sec-1.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+#input-form form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  background-color: rgba(253, 211, 211, 0.809);
+  border-radius: 30px;
+   box-shadow: 0px 5px 15px 3px #585555;
+  
+}
+#input-form form>*{
+  margin-bottom: 10px;
+  font-size: large;
+}
+#input-form form input{
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none; 
+}
+#input-form form h1{
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: bolder;
+  padding: 0;
+}
+header{
+  box-shadow: 0px 3px 15px 2px white ;
+ 
+}
+#save-btn{
+  margin-top: 10px;
+}
+/* section2 :start */
+#save-list-parent{
+  background: url(./images/sec-2.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-y: scroll;
+  border-radius: 30px 0 0 30px;
+}
+#save-list-parent h1{
+  background-color: rgba(255, 0, 0, 0.686);
+  padding: 10px;
+  text-align: center;
+  border-radius: 30px;
+  margin: 5px;
+  box-shadow: 0px 5px 15px 3px #585555;
+}
+#save-list-parent h4{
+  text-align: center;
+  margin-top: 5px;
+}
+#save-list{
+  padding: 10px;
+}
+#save-list li{
+  background-color:rgba(255, 255, 255, 0.772) ;
+  padding: 15px;
+  border-radius: 20px;
+  margin-top: 15px;
+   box-shadow: 0px 5px 15px 3px #585555;
+}
+#save-list li h3{
+  margin-top: 5px;
+}
+#delete{
+  background-color: rgb(146, 6, 6);
+}
+#delete:hover{
+  background-color: rgb(232, 48, 48);
+}
+#save-list li button{
+  padding: 10px 28px;
+  font-size: large;
+  margin-top: 12px;
+}
+
+/* section 3 start */
+#helpLine{
+  background: url(./images/sec-3.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#helpLine h1{
+  background-color: rgb(255, 111, 0);
+  padding: 10px;
+  text-align: center;
+  border-radius: 30px;
+  margin: 5px;
+  font-size: 25px !important;
+  margin-bottom: 0px;
+   box-shadow: 0px 5px 15px 3px #585555;
+}
+#helpLine ul{
+  padding: 30px;
+
+}
+#helpLine ul li{
+  padding: 15px 20px;
+  background-color: rgba(255, 255, 255, 0.772);
+  margin: 12px 3px;
+  display: flex;
+  font-size: large;
+  font-weight: bolder;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+   box-shadow: 0px 5px 15px 3px #585555;
+  
+}
+#helpLine ul li button{
+  padding: 10px 30px;
+  font-size: large;
+}
+
+/* for responsive */
+@media (max-width:768px){
+  #main{
+    grid-template-columns: 1fr;
+     background: none !important;
+  }
+  .section{
+    margin: 20px 5px !important;
+  }
+  body{
+     background-color: black !important;
+  }
+
+}
